@@ -1,0 +1,27 @@
+.Container {
+  width: 40rem;
+  border: 5px solid white;
+}
+
+.options-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.options-bar h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.options-bar h2:nth-child(1) {
+  background-color: #555;
+}
+
+.options-bar h2:nth-child(2) {
+  background-color: #888;
+}
+
+.options-bar h2:nth-child(3) {
+  background-color: #aaa;
+}
