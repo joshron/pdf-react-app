@@ -1,0 +1,38 @@
+.FileName {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: black;
+  animation: grow 1s ease-out forwards;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+@keyframes grow {
+  from {
+    height: 0;
+  }
+  to {
+    height: 3rem;
+  }
+}
+
+.file-name-list-item {
+  padding: 0.3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: calc(100% - 2rem);
+}
+
+.file-remove-button {
+  border: none;
+  cursor: pointer;
+  width: 2rem;
+  height: 100%;
+  font-size: 2rem;
+  color: darkred;
+  padding-right: 0.5rem;
+}

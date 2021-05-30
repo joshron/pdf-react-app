@@ -1,6 +1,10 @@
+import '../Styles/Trim.css'
+
 const Trim = () => {
   return (
-    <div>Trim</div>
+    <div className="Trim">
+      <p>Trim tools coming soon!</p>
+    </div>
   )
 }
 

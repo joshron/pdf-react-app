@@ -3,7 +3,8 @@ import '../Styles/Header.css';
 const Header = () => {
   return (
     <header className="Header">
-      <h1>PDF APP</h1>
+      <h1 className="logo">PDF GET</h1>
+      <p>Simple & secure PDF manipulation</p>
     </header>
   )
 }

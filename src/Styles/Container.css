@@ -1,6 +1,7 @@
 .Container {
-  width: 40rem;
-  border: 5px solid white;
+  width: calc(100% - 2rem);
+  margin-bottom: 1rem;
+  box-shadow: 10px 10px 0 black;
 }
 
 .options-bar {
@@ -9,19 +10,36 @@
   justify-content: space-evenly;
 }
 
-.options-bar h2 {
+.options-bar div {
   width: 100%;
+  padding: 1rem;  
+}
+
+.options-bar div h2 {
   text-align: center;
+  transition: all 0.5s ease-out;
 }
 
-.options-bar h2:nth-child(1) {
-  background-color: #555;
+.options-bar div h2:hover {
+  cursor: pointer;
+  transform: scale(1.2,1.2);
 }
 
-.options-bar h2:nth-child(2) {
-  background-color: #888;
+.options-bar div:nth-child(1) {
+  background-color: rgb(36, 32, 32);
 }
 
-.options-bar h2:nth-child(3) {
-  background-color: #aaa;
+.options-bar div:nth-child(2) {
+  background-color: rgb(58, 58, 173);
+}
+
+.options-bar div:nth-child(3) {
+  background-color: #F3F7F0;
+  color: rgb(36, 32, 32);
+}
+
+@keyframes text-grow {
+  to {
+    transform: scale(1.5);
+  }
 }

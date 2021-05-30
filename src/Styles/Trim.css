@@ -1,0 +1,12 @@
+.Trim {
+  background-color: rgb(58, 58, 173);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.Trim p {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+}

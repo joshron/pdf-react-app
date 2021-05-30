@@ -1,17 +1,23 @@
 import React, { useState }  from 'react';
-import Merge from './Merge';
+import MergeSection from './MergeSection';
 import Trim from './Trim';
 import Split from './Split';
 import '../Styles/Container.css'
 
 const Container = () => {
-  const [currentOption, setState] = useState(<Merge />);
+  const [currentOption, setState] = useState(<MergeSection />);
   return (
     <div className="Container">
       <div className="options-bar">
-        <h2 onClick={() => setState(<Merge />)}>Merge</h2>
-        <h2 onClick={() => setState(<Trim />)}>Trim</h2>
-        <h2 onClick={() => setState(<Split />)}>Split</h2>
+        <div>
+          <h2 onClick={() => setState(<MergeSection />)}>Merge</h2>
+        </div>
+        <div>
+          <h2 onClick={() => setState(<Trim />)}>Trim</h2>
+        </div>
+        <div>
+          <h2 onClick={() => setState(<Split />)}>Split</h2>
+        </div>
       </div>
       {currentOption}      
     </div>

@@ -1,6 +1,10 @@
+import '../Styles/Split.css'
+
 const Split = () => {
   return (
-    <div>Split</div>
+    <div className="Split">
+      <p>Split tools coming soon!</p>
+    </div>
   )
 }
 
